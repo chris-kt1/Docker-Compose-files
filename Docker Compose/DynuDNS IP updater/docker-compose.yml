@@ -1,0 +1,14 @@
+version: '2'
+services:
+  dynuUpdater:
+    image: dokeraj/dynu-updater:latest
+    restart: always
+    environment:
+      - USERNAME=[Required]
+      - PASSWORD=[Required]
+      - HOSTNAMES=[Required]
+      - TZ="America/Vancouver"
+      - REFRESH_TIME=10000
+    ports:
+      - 1050:1050
+
